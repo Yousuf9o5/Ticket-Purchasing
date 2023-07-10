@@ -67,6 +67,11 @@ function ShoppingTickets() {
       return;
     }
 
+    if (founded.quantity - 1 === 0 || founded.quantity === 0) {
+      const filter = shop.filter((item) => item.name != name);
+      return setShop([...filter]);
+    }
+
     const newData = shop.map((item) => {
       if (item.name === name) {
         const newQuantity = item.quantity - 1 <= 0 ? 0 : item.quantity - 1;
