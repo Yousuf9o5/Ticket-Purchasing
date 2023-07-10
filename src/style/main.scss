@@ -1,0 +1,23 @@
+/* ########## Font ########## */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* ########## variables ########## */
+@import "./vars.scss";
+
+/* ########## Payment ########## */
+@import "../components/paymentSection/paymentSection";
+
+/* ########## Delivery ########## */
+@import "../components/deliveryInfo/deliveryInfo";
+
+/* ########## Payment Selection ########## */
+@import "../components/PaymentSelection/paymentSelection";
+
+/* ########## Total ########## */
+@import "../components/totalSection/totalSection";
+
+/* ########## My Cards ########## */
+@import "../components/MyCardsLayout/myCards";
+
+/* ########## Add Form ########## */
+@import "../components/AddCardForm/addCardForm";

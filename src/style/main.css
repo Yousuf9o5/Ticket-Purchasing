@@ -1,0 +1,350 @@
+/* ########## Font ########## */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+/* ########## variables ########## */
+/*
+    Page font size
+*/
+/* ########## Payment ########## */
+.payment-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.payment-section .delivery-info {
+  grid-column: 1;
+  grid-row: 1;
+}
+.payment-section .total-section {
+  grid-column: 2;
+  grid-row: 1/span 2;
+}
+.payment-section .payment-selection {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* ########## Delivery ########## */
+.delivery-info {
+  padding: 1dvw;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.delivery-info .header-1,
+.delivery-info .header-2 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.delivery-info .caption {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 400;
+  font-size: 14px;
+}
+.delivery-info img {
+  width: 20px;
+  height: auto;
+}
+
+/* ########## Payment Selection ########## */
+.payment-selection {
+  padding: 1dvw;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.payment-selection .header-1 {
+  font-size: 18px;
+}
+.payment-selection .check {
+  width: 20px;
+}
+.payment-selection .selection-header {
+  margin-left: 1dvw;
+  font-size: 14px;
+}
+.payment-selection .add-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: background 0.3s ease-in-out;
+}
+.payment-selection .add-section:hover {
+  background: rgba(0, 0, 0, 0.0549019608);
+}
+.payment-selection .add-section img:nth-child(2) {
+  width: auto;
+  height: 40px;
+}
+.payment-selection .add-section p {
+  margin: 0;
+  color: #2d6cd7;
+}
+.payment-selection .caption {
+  font-weight: 500;
+  font-size: 14px;
+}
+.payment-selection .header-2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.add-form p {
+  margin: 0;
+  font-size: 14px;
+}
+.add-form .date {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.add-form .code {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.add-form .add-card {
+  border-radius: 5px;
+  background: #3b7e2a;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+
+/* ########## Total ########## */
+.total-section {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1dvw;
+  border-radius: 5px;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.total-section .accordion-item {
+  border: 0;
+}
+.total-section .header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.total-section .accordion-button {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+  border: 0 !important;
+  background: transparent !important;
+  color: black !important;
+  box-shadow: none !important;
+  width: 100%;
+}
+.total-section .accordion-button:focus {
+  background: transparent;
+}
+.total-section .accordion-collapse {
+  border: 0 !important;
+}
+.total-section .accordion-body {
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 14px;
+  font-weight: normal;
+}
+.total-section .price-info {
+  display: flex;
+  justify-content: space-between;
+}
+.total-section .price-info:last-child {
+  margin-bottom: 1rem;
+}
+.total-section .price-info p {
+  margin: 0;
+}
+.total-section .fee-pricing {
+  display: flex;
+  flex-direction: column;
+}
+.total-section .cancel-order {
+  color: #4983dd;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 1rem 0;
+  background: transparent;
+}
+.total-section .read-terms {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+.total-section .place-order {
+  width: 100%;
+  padding: 1rem;
+  background: #3b7e2a;
+  font-size: 18px;
+  color: white;
+  font-weight: normal;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+}
+.total-section .last-p {
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: 12px;
+}
+.total-section .header {
+  font-weight: 600;
+  margin: 0;
+}
+
+/* ########## My Cards ########## */
+.my-cards {
+  padding: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.my-cards div {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.my-cards input[type=radio] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 25px;
+  height: 25px;
+  border: 5px solid transparent;
+  border-radius: 50%;
+  outline: none;
+  background: white;
+  position: relative;
+  outline: solid 1px rgba(0, 0, 0, 0.4);
+  margin-right: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.my-cards input[type=radio]:checked {
+  border-color: white;
+  background: #2d6cd7;
+}
+.my-cards .card-info {
+  display: flex;
+  gap: 0.5rem;
+}
+.my-cards .card-info button {
+  color: #4983dd;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  font-weight: 500;
+}
+.my-cards .card-type {
+  width: 40px;
+  height: 40px;
+  transform: translateY(-7px);
+}
+.my-cards p {
+  margin-bottom: 5px;
+}
+.my-cards .security-text {
+  margin: 0;
+}
+.my-cards .check-input {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.my-cards .check-input img {
+  width: auto;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.my-cards .input-field {
+  background: white;
+  border: 1px solid;
+  align-items: center;
+  padding: 5px 10px;
+}
+.my-cards input[type=password] {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  vertical-align: middle;
+  width: 70px;
+}
+.my-cards img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.my-cards .font-transparent {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.my-cards-active {
+  background: #f2f7fc;
+  border: 1px solid #d4e8fc;
+}
+
+/* ########## Add Form ########## */
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+.add-form p {
+  margin: 0;
+  font-size: 14px;
+}
+.add-form .date {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.add-form .code {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.add-form .add-card {
+  border-radius: 5px;
+  background: #3b7e2a;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 0;
+  outline: 0;
+}
+.add-form .cancel-btn {
+  border-radius: 5px;
+  background: transparent;
+  padding: 0;
+  color: #4983e2;
+  border: 0;
+  outline: 0;
+  margin-left: 1rem;
+}
+.add-form .validation {
+  margin: 0;
+  margin-top: 5px;
+  color: #fa2929;
+  font-size: 12px;
+  font-weight: normal;
+}/*# sourceMappingURL=main.css.map */

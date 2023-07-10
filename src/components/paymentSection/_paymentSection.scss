@@ -1,0 +1,24 @@
+.payment-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+
+  .delivery-info {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .total-section {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .payment-selection {
+    grid-column: 1;
+    grid-row: 2;
+  }
+}

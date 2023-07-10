@@ -1,0 +1,25 @@
+.delivery-info {
+  padding: 1dvw;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  width: 100%;
+  height: fit-content;
+
+  .header-1,
+  .header-2 {
+    font-size: $size-h5;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .caption {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 400;
+    font-size: $size-general;
+  }
+
+  img {
+    width: 20px;
+    height: auto;
+  }
+}

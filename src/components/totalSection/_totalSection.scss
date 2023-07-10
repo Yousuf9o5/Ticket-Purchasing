@@ -1,0 +1,100 @@
+.total-section {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 1dvw;
+  border-radius: 5px;
+  height: fit-content;
+
+  .accordion-item {
+    border: 0;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+  }
+
+  .accordion-button {
+    font-size: $size-h5;
+    font-weight: 600;
+    padding: 0;
+    border: 0 !important;
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+
+    width: 100%;
+    &:focus {
+      background: transparent;
+    }
+  }
+
+  .accordion-collapse {
+    border: 0 !important;
+  }
+
+  .accordion-body {
+    padding: 0;
+    margin-top: 1rem;
+    font-size: $size-general;
+    font-weight: normal;
+  }
+
+  .price-info {
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .fee-pricing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cancel-order {
+    color: #4983dd;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: $size-general;
+    margin: 1rem 0;
+    background: transparent;
+  }
+
+  .read-terms {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .place-order {
+    width: 100%;
+    padding: 1rem;
+    background: #3b7e2a;
+    font-size: $size-h6;
+    color: white;
+    font-weight: normal;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+  }
+
+  .last-p {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 12px;
+  }
+
+  .header {
+    font-weight: 600;
+    margin: 0;
+  }
+}

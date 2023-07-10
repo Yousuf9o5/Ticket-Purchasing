@@ -1,0 +1,48 @@
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+
+  p {
+    margin: 0;
+    font-size: $size-general;
+  }
+
+  .date {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .code {
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  .add-card {
+    border-radius: 5px;
+    background: #3b7e2a;
+    padding: 0.5rem 1rem;
+    color: white;
+    border: 0;
+    outline: 0;
+  }
+
+  .cancel-btn {
+    border-radius: 5px;
+    background: transparent;
+    padding: 0;
+    color: #4983e2;
+    border: 0;
+    outline: 0;
+    margin-left: 1rem;
+  }
+
+  .validation {
+    margin: 0;
+    margin-top: 5px;
+    color: #fa2929;
+    font-size: 12px;
+    font-weight: normal;
+  }
+}
