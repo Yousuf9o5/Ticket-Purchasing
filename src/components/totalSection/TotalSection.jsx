@@ -30,6 +30,10 @@ function TotalSection() {
     return alert("purchase done");
   };
 
+  const handleCancel = () => {
+    setShop([]);
+  };
+
   return (
     <div className="total-section">
       <div className="accordion" id="accordionExample">
@@ -58,7 +62,7 @@ function TotalSection() {
             <div className="accordion-body">
               <div className="tickets-info">
                 <p className="header">Tickets:</p>
-                {shop.map((item, i) => (
+                {shop?.map((item, i) => (
                   <div className="price-info" key={i}>
                     <p>
                       Resale Tickets:{item.name} x {item.quantity}
@@ -77,7 +81,7 @@ function TotalSection() {
                 <p className="header">Fees:</p>
                 <div className="price-info d-flex flex-column">
                   <p>Order Processing Fee</p>
-                  {shop.map((item, i) => (
+                  {shop?.map((item, i) => (
                     <div className="d-flex" key={i}>
                       <p>Fee:&nbsp; </p>
                       <p className="price">
@@ -94,7 +98,9 @@ function TotalSection() {
                   <p className="price">{totalDelivery.toFixed(2)}$</p>
                 </div>
               </div>
-              <button className="cancel-order">Cancel Order</button>
+              <button className="cancel-order" onClick={handleCancel}>
+                Cancel Order
+              </button>
               <div>
                 <p>*All Sales Final - No Refunds</p>
                 <div className="read-terms">

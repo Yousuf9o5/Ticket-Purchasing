@@ -77,11 +77,12 @@ function MyCards() {
               <p>
                 {item.type.toUpperCase()} - {item.code}
               </p>
+              <p className="m-0">Balance: {item.balance} $</p>
               <p className="font-transparent">
                 {item.name} | {item.expire}
               </p>
               <div className="d-flex gap-1">
-                <button>Edit</button> <p className="font-transparent">|</p>
+                {/* <button>Edit</button> <p className="font-transparent">|</p> */}
                 <button onClick={() => deleteCard(item.id)}>Delete</button>
               </div>
             </div>
