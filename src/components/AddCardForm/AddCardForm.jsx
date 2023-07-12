@@ -27,7 +27,7 @@ function AddCardForm({ setAdd, addCard }) {
       setCardType("visa");
     }
 
-    if (+(number[0] + number[1]) >= 51 && +(number[0] + number[1]) <= 55) {
+    if (+(number[0] + number[1]) >= 51 && +(number[0] + number[1]) === 55) {
       setCardType("Mastercard");
     }
   }, [number, expire]);
