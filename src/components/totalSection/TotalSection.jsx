@@ -18,6 +18,10 @@ function TotalSection() {
       return alert("must read terms");
     }
 
+    if (!shop || shop.length === 0) {
+      return alert(`your cart is empty`);
+    }
+
     if (!card) {
       return alert("chose or add payment method");
     }
