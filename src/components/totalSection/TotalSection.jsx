@@ -40,12 +40,12 @@ function TotalSection() {
         <div className="accordion-item">
           <h2 className="accordion-header" id="flush-headingOne">
             <button
-              className="accordion-button collapsed"
+              className="accordion-button"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne"
-              aria-expanded="false"
-              aria-controls="flush-collapseOne"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
             >
               <div className="header-container">
                 <p className="m-0">Total</p>
@@ -54,10 +54,9 @@ function TotalSection() {
             </button>
           </h2>
           <div
-            id="flush-collapseOne"
+            id="collapseOne"
             className="accordion-collapse collapse"
-            aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample"
+            data-bs-parent="#accordionExample"
           >
             <div className="accordion-body">
               <div className="tickets-info">
